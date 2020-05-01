@@ -29,7 +29,7 @@ weatherForm.addEventListener('submit',(e)=>{
                 else
                 {
                     messageone.textContent = data.location;
-                    messagetwo.textContent = data.forecast;
+                    messagetwo.textContent = 'Temperature of '+data.location+' is '+data.temperature+'.And it feels like'+data.feelsLike+'.Weather is'+data.forecast+'.Humidity is '+data.humidity;
                 }
             });
         });

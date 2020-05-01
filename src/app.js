@@ -64,7 +64,10 @@ app.get('/weather',(req,res)=>{
             res.send({
                 forecast:response.weatherDescription,
                 location,
-                address:req.query.address
+                address:req.query.address,
+                feelsLike:response.feelsLike,
+                temperature:response.temperature,
+                humidity:response.humidity
             })
         });
     });
